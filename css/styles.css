@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#addNote {
+  position: fixed;
+  right: 0.675rem;
+  top: 0.675rem;
+  background-color: #222;
+  padding: 0.5rem 0.675rem;
+  color: #ddd;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: linear-gradient(
+    to right bottom,
+    #3e2a62,
+    #3a3065,
+    #363568,
+    #333a6a,
+    #313f6c,
+    #28446d,
+    #20486d,
+    #1a4c6c,
+    #0e5068,
+    #115463,
+    #1d575c,
+    #2b5956
+  );
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 3.5rem;
+}
+
+.note {
+  width: 300px;
+  height: 400px;
+  background: #ddd;
+  margin: 1rem;
+  margin-top: 3.5rem;
+}
+
+.tool {
+  width: 100%;
+  background: #222;
+  color: #fff;
+  padding: 0.375rem;
+  display: flex;
+  justify-content: end;
+}
+
+.tool i {
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.note textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 0.5rem;
+  font-size: 18px;
+}
